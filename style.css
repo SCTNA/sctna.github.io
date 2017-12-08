@@ -1,8 +1,6 @@
 <style type="text/css">
 
-body {
-   background-color: red;
-}
+
 
 h1#usclogo {
 	float: right;
@@ -18,5 +16,9 @@ h1#usclogo a {
 	
 	background:url(usc-shield-name-black.png) 0 11px no-repeat;
 	text-indent: -9999px;
+}
+
+body {
+   background-color: red;
 }
 </style>
