@@ -1,0 +1,17 @@
+<style type="text/css">
+h1#usclogo {
+	float: right;
+	width: 198px;
+	height: 60px;
+	margin: 0;
+}
+h1#usclogo a {
+	display: block;
+	width: 176px;
+	height: 38px;
+	padding:11px;
+	background-color:#900 // cardinal
+	background:url(usc-shield-name-white.png) 0 11px no-repeat;
+	text-indent: -9999px;
+}
+</style>
