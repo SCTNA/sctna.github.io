@@ -12,7 +12,7 @@ h1#usclogo a {
 	width: 176px;
 	height: 38px;
 	padding:11px;
-	background-color:#900 // cardinal
+	
 	background:url(usc-shield-name-black.png) 0 11px no-repeat;
 	text-indent: -9999px;
 }
