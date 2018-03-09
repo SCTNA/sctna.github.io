@@ -38,6 +38,10 @@
     }
   }
 }
+#logoUSC {
+  width: 10em;
+}
+
 @media(min-width:992px) {
   #mainNav {
     padding-top: 25px;
@@ -63,7 +67,7 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background-color: #000000;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;

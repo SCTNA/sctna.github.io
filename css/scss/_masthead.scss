@@ -2,7 +2,7 @@
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/bg_main.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11,6 +11,7 @@ header.masthead {
     padding-top: 150px;
     padding-bottom: 100px;
     .intro-lead-in {
+      color:white;
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
@@ -18,6 +19,7 @@ header.masthead {
       @include serif-font;
     }
     .intro-heading {
+      text-shadow: 4px 4px #111111;
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
