@@ -80,11 +80,6 @@ h2 #logo{
     margin-left: -8px;
     margin-right: -8px;
     height: 564.5px;
-    background :
-        linear-gradient(
-      rgba(0, 0, 0, 0.25), 
-      rgba(0, 0, 0, 0.25)
-    );
     /* bottom, image */
     background-image: url("img/bg_main.jpg");
     background-attachment: fixed;
