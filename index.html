@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>SCTNA</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+        <!-- Custom styles for this template -->
+        <link href="css/home.css" rel="stylesheet">
+
+    </head>
+    
+    <body class = "HomePage"> 
+<!-------------------------Header------------------------------>        
+        <header class="masthead">
+            <h1><span id = "title">SC Trojans Neighborhood Association</span></h1>
+            <h2><img id = "logo" src="img/usc website identity graphics/usc-shield-name-black.png"></h2>
+        </header>  
+        
+<!------------------------Navigation Bar----------------------->
+        <!--<nav class="navbar">
+            <div class="navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" onmousemove="overTab(this)" onmouseout="outTab(this)">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#portfolio" onmousemove="overTab(this)" onmouseout="outTab(this)">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#about" onmousemove="overTab(this)" onmouseout="outTab(this)">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Impact Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Town Hall</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>-->
+        <div id="navbar">
+            <div id="navbar-items">
+            <a class="nav-link" href="#services" onmousemove="overTab(this)" onmouseout="outTab(this)">Home</a>
+            <a class="nav-link " href="#portfolio" onmousemove="overTab(this)" onmouseout="outTab(this)">About Us</a>
+             <a class="nav-link " href="#about" onmousemove="overTab(this)" onmouseout="outTab(this)">Donate</a>
+            <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Impact Area</a>
+            <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Town Hall</a>
+            </div>
+        </div>
+        <script>
+            function overTab(x) {
+                x.style.color = "#FFCC00";
+            }
+
+            function outTab(x) {
+                x.style.color = "white";
+            }
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+       
+<!-------------------Welcome Container--------------------->
+        <section id="welcomContainer">
+            <div id="intro-text" style="color:white;text-align:center;height:100%">
+                <div id="intro-heading"><h3><span>WELCOM TO SC TROJANS NEIGHBORHOOD ASSOCIATION</span></h3></div>
+                <div id="intro-mission-heading"><h4><span>Our mission</span></h4></div>
+                <div id="intro-mission-content"><p>The SC Trojans Neighborhood Association aims to protect and assist renters within the USC DPS area who have had their rights violated by landlords or property management companies.</p></div>
+                <button class="btn" id = "learnmore-btn" href="#services">Learn More</button>
+            </div>
+        </section>
+
+<!-----------------------Updates--------------------------->
+        <section id="updates">
+            <div class="container">
+                <div id="updates-heading"><h5>UPCOMING EVENTS</h5></div>
+                <section id="updates-events">
+                    <section class="events">
+                        <div class="event-img"><img class="content-img" src="img/event-3.24.jpg" style="float:left"></div>
+                        <section class="event-text">
+                            <div class="event-heading"><h6>TNA Day of Canvassing 2.0</h6></div>
+                                <div class="event-date" style="font-size:18px"><h7>Event Date: 3.24.2018</h7></div>
+                                <div class="event-content">
+                                    <p > Since its inception in 2016, the USC Housing Law Clinic has provided free referrals, translation services, legal representation, and other renter resources for local residents. Many have faced discrimination, eviction, and landlord disputes, among a host of other housing issues.</p> 
+                                    <p>In partnership with the Housing Law Clinic, the Trojan Neighborhood Association will be reaching out to tenants around USC campus (within the DPS Response Zone) to provide essential renter resources. Volunteers will be knocking on doors and introducing to tenants some of the basic services that the Clinic offers, as well as handing out brochures about tenant rights.</p>
+                                </div>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+<!-----------------------Resources--------------------------->
+        <section id="resources">
+            <div class="container">
+                <div id="rsrc-heading"><h5>RESOURCES</h5></div>
+                <section id="rsrc-lists">
+                    <section class="rsrc-item">
+                        <div class="rsrc-img"><img class="item-img" src="img/HDICLA.png" style="float:left"></div>
+                        <section class="rsrc-text">
+                            <div class="rsrc-heading"><a href="http://hcidla.lacity.org/" style="text-decoration:none" onmousemove="overHeading(this)" onmouseout="outHeading(this)">Los Angeles Housing + Community Investment Department</a></div>
+                                <div class="rsrc-content">
+                                    <p>The Los Angeles Housing + Community Investment Department (HCIDLA) is to promote livable and prosperous communities through the development and preservation of decent, safe, and affordable housing, neighborhood investment and social services.</p> 
+                                    <p> The HCIDLA is made up of six major areas: Office of the General Manager, Administration, Housing Development, Community Services and Development, Regulatory Compliance & Code, Performance Matrics and Plan.</p>
+                                    <p style="font-weight:bold">Blows are inoformation from HCIDLA you may need:</p>
+                                    <ul style="font-size:18px;line-height:1.7;margin-top:-4px; margin-bottom: -0.3px">
+                                        <li class="infom-item">
+                                            <a href="http://hcidla.lacity.org/living-safe-conditions" style="text-decoration:none" onmousemove="overTexting(this)" onmouseout="outTexting(this)">Los Angeles City Information About Renters’ Rights</a>
+                                        </li>
+                                        <li class="infom-item">
+                                            <a href="http://hcidapp.lacity.org/ReportViolation/Pages/ReportViolation" style="text-decoration:none" onmousemove="overTexting(this)" onmouseout="outTexting(this)">Online Form for Reporting a Landlord or Property Management Violation</a>
+                                        </li>
+                                    </ul>
+                                     <p style="font-weight:bold;margin-top:6px">Please call 1-866-557-7368</p>
+                                     <ul style="font-size:18px;line-height:1.7;margin-top:-4px">
+                                        <li class="infom-item">
+                                            If you would like to make an anonymous complaint or prefer to make a complaint by phone
+                                        </li>
+                                        <li class="infom-item">
+                                            To make a complaint about a violation on a residential rental property, containing more than one dwelling unit
+                                        </li>
+                                    </ul>
+                                </div>
+                        </section>
+                    </section>
+                    <section class="rsrc-item">
+                        <div class="rsrc-img" style="margin-top:40px"><img class="item-img" src="img/PublicHealth.jpg" style="float:left"></div>
+                        <section class="rsrc-text" style="margin-top:45px">
+                            <div class="rsrc-heading"><a href="http://publichealth.lacounty.gov/eh/AreasofInterest/housing.htm" style="text-decoration:none" onmousemove="overHeading(this)" onmouseout="outHeading(this)">LAC Environmental Health</a></div>
+                                <div class="rsrc-content">
+                                    <p>The LAC Environmental Health is an enforcement agency operating as part of the County of Los Angeles, Department of Public Health.</p> 
+                                    <p> The LAC Environmental Health assesses environmental conditions and reduces exposure to health risks; and to educate the public on sources of environmental risk so they are empowered to protect themselves, their families and their communities.</p>
+                                    <a href="https://ehservices.publichealth.lacounty.gov/servlet/guest?service=0&formId=4&saveAction=5" style="font-weight:bold;text-decoration:none" onmousemove="overTexting(this)" onmouseout="outTexting(this)">Click me to have LAC Environmental Health Complaint Form !</a> 
+                                </div>
+                        </section>
+                    </section>
+                    <section class="rsrc-item">
+                        <div class="rsrc-img" style="margin-top:53px"><img class="item-img" src="img/LADBS.png" style="float:left"></div>
+                        <section class="rsrc-text" style="margin-top:65px">
+                            <div class="rsrc-heading"><a href="http://www.ladbs.org/" style="text-decoration:none" onmousemove="overHeading(this)" onmouseout="outHeading(this)">LA Department of Building and Safety</a></div>
+                                <div class="rsrc-content">
+                                    <p>The LA Department of Building and Safety protects the lives and safety of the residents and visitors of the City of Los Angeles and enhance the quality of life, housing, economic prosperity, and job creation citywide. Utilizing timely, cooperative, and transparent processes, the Department Advises, Guides, and Assists Customers to achieve compliance with the Building, Zoning, Plumbing, Mechanical, Electrical, Disabled Access, Energy, and Green codes and local and State law to Build Safe, Well, and Fast</p>
+                                    <p style="font-weight: bold">For properties containing only one dwelling unit, please call at 1-888-524-2845.</p>
+                                </div>
+                        </section>
+                    </section>
+                    <section class="rsrc-item">
+                        <div class="rsrc-img" style="margin-top:60px"><img class="item-img" src="img/USCHousingClinic.jpg" style="float:left"></div>
+                        <section class="rsrc-text" style="margin-top:62px">
+                            <div class="rsrc-heading"><a href="https://communities.usc.edu/usc-housing-clinic/" style="text-decoration:none" onmousemove="overHeading(this)" onmouseout="outHeading(this)">USC Housing Clinic</a></div>
+                                <div class="rsrc-content">
+                                    <p>The USC Housing Law Clinic provides professional services in housing discrimination law, local affordable housing issues, and landlord-tenant dispute resolution. The clinic provides free legal representation to affordable housing tenants within the area surrounding USC through the services of a designated case attorney. Clients are seen by appointment only.</p> 
+                                    <p>Phone: (213) 743-2165</p>
+                                    <p><a href="hlclinic@usc.edu" style="text-decoration:none" onmousemove="overTexting(this)" onmouseout="outTexting(this)">Email: hlclinic@usc.edu</a></p>
+                                </div>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+         <script>
+            function overHeading(x) {
+                x.style.color = "#FFCC00";
+            }
+
+            function outHeading(x) {
+                x.style.color = "#990000";
+            }
+
+             function overTexting(x) {
+                x.style.color = "#FFCC00";
+            }
+
+            function outTexting(x) {
+                x.style.color = "#5b514a";
+            } 
+        </script>
+        
+<!-------------------------Contact Us---------------------------->
+        <section id="contact">
+            <div id="contact-heading"><h5>CONTACT US</h5></div>
+            <form id="contact-form" action="action_page.php">
+
+                <label class="label" for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" style="width: 450px;margin-right:300px;">
+                
+                <label class="label" for="emailAddress">Email</label>
+                <input id="emailAddress" type="email" name="email" style="width: 450px;margin-right:300px;">
+                
+                <label class="label" for="lname">Subject</label>
+                <input type="text" id="lname" name="lastname" style="width: 450px;">
+
+                <label class="label" for="subject">Message</label>
+                <textarea id="subject" name="subject" style="height:200px;width:700px;margin-right:300px;"></textarea>
+
+                <input type="submit" value="Submit" style="margin-right:308px;">
+
+            </form>
+        </section>
+        
+<!------------------------Footer-------------------->
+<footer>
+      <div class="container">
+        <div id="copyright">
+            <span id="copyright-text">Copyright &copy; USC SCTNA 2018</span>
+        </div>
+      </div>
+</footer>
+    </body>
+</html>
