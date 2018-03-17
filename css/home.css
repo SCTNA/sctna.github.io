@@ -84,9 +84,9 @@ h2 #logo{
         linear-gradient(
       rgba(0, 0, 0, 0.25), 
       rgba(0, 0, 0, 0.25)
-    ),
+    );
     /* bottom, image */
-    url("img/bg_main.jpg");
+    background-image: url("img/bg_main.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
