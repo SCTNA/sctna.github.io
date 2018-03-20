@@ -31,7 +31,7 @@ p{
     margin-bottom: 32px;
 }
 
-h1 #title{
+#title{
     padding-left: 54.5px;
     font-weight: normal;
     color:#5b514a; 
@@ -39,7 +39,7 @@ h1 #title{
     font-style: normal;
 }
 
-h2 #logo{
+#logo{
     height: 38px;
     width: 176px;
     float: right;
@@ -51,9 +51,10 @@ h2 #logo{
     overflow: hidden;
     background-color: #990000;
     z-index: 150;
+    width: 1300px;
     box-shadow: 1px 1px 1px rgba(0,0,0, .6);
     margin-left: -8px;
-    margin-right: -8px;
+    margin-right: -13px;
 }
 
 #navbar-items{
@@ -79,48 +80,41 @@ h2 #logo{
 #welcomContainer{
     margin-left: -8px;
     margin-right: -8px;
-    height: 564.5px;
-    background :
-        linear-gradient(
-      rgba(0, 0, 0, 0.25), 
-      rgba(0, 0, 0, 0.25)
-    );
+    height: 574.5px;
+    background-image: url("../img/bg_main.jpg");
     /* bottom, image */
-    background-image:  url("img/bg_main.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
 #intro-heading{
-    padding-top: 5px;
+    padding-top: 120px;
     word-wrap: break-word;
     letter-spacing: normal;
-    font-size: 60px;
     font-weight:lighter;    
-    width:1280px;
 }
 
 #intro-mission-heading{
-    padding-top: -20px;
+    padding-top: 70px;
     padding-bottom: -20px;
-    font-size: 40px;
     height: 40px;
     width:1280px;
 }
 
 #intro-mission-content{
-    margin-top: 25px;
+    padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 240px;
+    padding-right: 240px;
     font-size: 20px;
     word-wrap: break-word;
     letter-spacing: normal;
-    width:800px;
+    width:100%;
 }
 
 #learnmore-btn{
-    margin-top: 18px;
+    margin-top: 50px;
     font-size: 20px;
     text-align: center;
     background-color: transparent;;
