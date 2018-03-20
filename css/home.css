@@ -1,0 +1,287 @@
+body{
+    font-family: "proxima-nova-n3","proxima-nova";
+    padding:0;
+    margin:0;
+}
+
+h5{
+    color: #990000;
+    height: 40px;
+    font-size: 45px;
+}
+
+h6{
+    font-size: 30px;
+    color: #990000;
+}
+
+p{
+    line-height: 1.5;
+     margin-top: 0em;
+     margin-bottom: 0.4em;
+}
+/******************Header******************/
+.masthead {
+    background-color: white;
+    width: 1280px;
+    margin:0;
+    display: inline-block;
+    margin-left: -8px;
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+
+h1 #title{
+    padding-left: 54.5px;
+    font-weight: normal;
+    color:#5b514a; 
+    float: left;
+    font-style: normal;
+}
+
+h2 #logo{
+    height: 38px;
+    width: 176px;
+    float: right;
+    padding-right: 54.5px;
+}
+
+/***********Navigation Bar***************/
+#navbar {
+    overflow: hidden;
+    background-color: #990000;
+    z-index: 150;
+    box-shadow: 1px 1px 1px rgba(0,0,0, .6);
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+#navbar-items{
+    margin-left: 38px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+}
+
+/**************Welcome Container*************/
+#welcomContainer{
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 564.5px;
+    background :
+        linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    );
+    /* bottom, image */
+    background-image:  url("img/bg_main.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#intro-heading{
+    padding-top: 5px;
+    word-wrap: break-word;
+    letter-spacing: normal;
+    font-size: 60px;
+    font-weight:lighter;    
+    width:1280px;
+}
+
+#intro-mission-heading{
+    padding-top: -20px;
+    padding-bottom: -20px;
+    font-size: 40px;
+    height: 40px;
+    width:1280px;
+}
+
+#intro-mission-content{
+    margin-top: 25px;
+    padding-bottom: 40px;
+    padding-left: 240px;
+    font-size: 20px;
+    word-wrap: break-word;
+    letter-spacing: normal;
+    width:800px;
+}
+
+#learnmore-btn{
+    margin-top: 18px;
+    font-size: 20px;
+    text-align: center;
+    background-color: transparent;;
+    color: white;
+    height: 45px;
+    width: 120px;
+    border: 2px solid #e7e7e7;
+    border-radius: 20px;
+}
+
+#learnmore-btn:hover {
+    background-color: #FFCC00;
+    color: white;
+    border: none;
+}
+
+/*****************Updates*****************/
+#updates{
+    margin-top: 100px;
+    margin-left: 54.5px;
+    margin-right: 54.5px;
+}
+
+#updates-events{
+    margin-top: -10px;
+}
+.event-img{
+    float:left;
+    
+}
+.content-img{
+    height:300px;
+    width:500px;
+}
+
+.event-text{
+    padding-left: 55px;
+    float:left;
+    width: 600px;
+}
+
+.event-heading{
+    margin-top: -76px;
+}
+
+.event-date{
+    margin-top: -45px;
+    font-style: italic;
+    color: #FFCC00;
+    font-weight: bold;
+}
+
+.event-content{
+    font-size: 18px;
+    color: #5b514a;
+}
+
+/********************Resources*********************/
+#resources{
+    margin-top: 500px;
+    margin-left: 54.5px;
+    margin-right: 54.5px;
+}
+
+#rsrc-heading{
+    text-align: center!important;
+}
+
+#rsrc-lists{
+    margin-top: -10px;
+}
+
+.rsrc-img{
+    float:left;
+    
+}
+.item-img{
+    height:150px;
+    width:240px;
+}
+
+.rsrc-text{
+    padding-left: 55px;
+    float:left;
+    width: 860px;
+}
+
+.rsrc-heading{
+    margin-top: -8px;
+    font-size: 30px;
+}
+
+.rsrc-content{
+    margin-top: 24px;
+    font-size: 18px;
+    color: #5b514a;
+}
+
+/*********************Contact*************************/
+#contact{
+    margin-top: 1450px;
+    margin-left: 54.5px;
+}
+#contact-heading {
+    text-align: left;
+    height:
+}
+
+#contact-form {
+    margin-left: 200px;
+}
+
+.label{
+    color: #990000;
+    font-size: 20px;
+    width: 100%;
+    float:left;
+}
+input[type=text], input[type=email], select, textarea { 
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    float:left;
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #990000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    float: right;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #FFCC00;
+}
+
+/*************************Footer*******************************/
+footer{
+    margin-top: 75px;
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+#copyright{
+    padding-top: 12px;
+    background-color: #990000;
+    height:25px;
+}
+
+#copyright-text{
+    padding-left: 54px;
+    color:white;
+    letter-spacing: normal;
+    text-align: left;
+}
