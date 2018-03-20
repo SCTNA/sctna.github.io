@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>SCTNA</title>
 
@@ -28,8 +29,16 @@
     <body class = "HomePage"> 
 <!-------------------------Header------------------------------>        
         <header class="masthead">
-            <h1><span id = "title">SC Trojans Neighborhood Association</span></h1>
-            <h2><img id = "logo" src="img/usc-shield-name-black.png"></h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-xs-12">
+                    <h1><span id = "title">SC Trojans Neighborhood Association</span></h1>
+                    </div>
+                    <div class="col-lg-4 col-xs-12">
+                    <img id = "logo" class="img-responsive" src="img/usc-shield-name-black.png">
+                    </div>
+                </div>
+            </div>
         </header>  
         
 <!------------------------Navigation Bar----------------------->
@@ -54,13 +63,15 @@
                 </ul>
             </div>
         </nav>-->
-        <div id="navbar">
-            <div id="navbar-items">
-            <a class="nav-link" href="#services" onmousemove="overTab(this)" onmouseout="outTab(this)">Home</a>
-            <a class="nav-link " href="#portfolio" onmousemove="overTab(this)" onmouseout="outTab(this)">About Us</a>
-             <a class="nav-link " href="#about" onmousemove="overTab(this)" onmouseout="outTab(this)">Donate</a>
-            <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Impact Area</a>
-            <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Town Hall</a>
+        <div id="navbar" >
+            <div class="container-fluid">
+                <div id="navbar-items">
+                    <a class="nav-link" href="#services" onmousemove="overTab(this)" onmouseout="outTab(this)">Home</a>
+                    <a class="nav-link " href="#portfolio" onmousemove="overTab(this)" onmouseout="outTab(this)">About Us</a>
+                    <a class="nav-link " href="#about" onmousemove="overTab(this)" onmouseout="outTab(this)">Donate</a>
+                    <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Impact Area</a>
+                    <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Town Hall</a>
+                </div>
             </div>
         </div>
         <script>
@@ -87,17 +98,19 @@
        
 <!-------------------Welcome Container--------------------->
         <section id="welcomContainer">
-            <div id="intro-text" style="color:white;text-align:center;height:100%">
-                <div id="intro-heading"><h3><span>WELCOM TO SC TROJANS NEIGHBORHOOD ASSOCIATION</span></h3></div>
-                <div id="intro-mission-heading"><h4><span>Our mission</span></h4></div>
-                <div id="intro-mission-content"><p>The SC Trojans Neighborhood Association aims to protect and assist renters within the USC DPS area who have had their rights violated by landlords or property management companies.</p></div>
-                <button class="btn" id = "learnmore-btn" href="#services">Learn More</button>
+            <div class="container-fluid">
+                <div id="intro-text" style="color:white;text-align:center;height:100%">
+                    <div id="intro-heading"><h1><span>WELCOM TO SC TROJANS NEIGHBORHOOD ASSOCIATION</span></h1></div>
+                    <div id="intro-mission-heading"><h3><span>Our mission</span></h3></div>
+                    <div id="intro-mission-content"><p>The SC Trojans Neighborhood Association aims to protect and assist renters within the USC DPS area who have had their rights violated by landlords or property management companies.</p></div>
+                    <button class="btn" id = "learnmore-btn" href="#services">Learn More</button>
+                </div>
             </div>
         </section>
 
 <!-----------------------Updates--------------------------->
         <section id="updates">
-            <div class="container">
+            <div class="container-fluid">
                 <div id="updates-heading"><h5>UPCOMING EVENTS</h5></div>
                 <section id="updates-events">
                     <section class="events">
@@ -117,7 +130,7 @@
 
 <!-----------------------Resources--------------------------->
         <section id="resources">
-            <div class="container">
+            <div class="container-fluid">
                 <div id="rsrc-heading"><h5>RESOURCES</h5></div>
                 <section id="rsrc-lists">
                     <section class="rsrc-item">
@@ -204,29 +217,31 @@
         
 <!-------------------------Contact Us---------------------------->
         <section id="contact">
-            <div id="contact-heading"><h5>CONTACT US</h5></div>
-            <form id="contact-form" action="action_page.php">
+            <div class="container-fluid">
+                <div id="contact-heading"><h5>CONTACT US</h5></div>
+                <form id="contact-form" action="action_page.php">
 
-                <label class="label" for="fname">Name</label>
-                <input type="text" id="fname" name="firstname" style="width: 450px;margin-right:300px;">
-                
-                <label class="label" for="emailAddress">Email</label>
-                <input id="emailAddress" type="email" name="email" style="width: 450px;margin-right:300px;">
-                
-                <label class="label" for="lname">Subject</label>
-                <input type="text" id="lname" name="lastname" style="width: 450px;">
+                    <label class="label" for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" style="width: 450px;margin-right:300px;">
 
-                <label class="label" for="subject">Message</label>
-                <textarea id="subject" name="subject" style="height:200px;width:700px;margin-right:300px;"></textarea>
+                    <label class="label" for="emailAddress">Email</label>
+                    <input id="emailAddress" type="email" name="email" style="width: 450px;margin-right:300px;">
 
-                <input type="submit" value="Submit" style="margin-right:308px;">
+                    <label class="label" for="lname">Subject</label>
+                    <input type="text" id="lname" name="lastname" style="width: 450px;">
 
-            </form>
+                    <label class="label" for="subject">Message</label>
+                    <textarea id="subject" name="subject" style="height:200px;width:700px;margin-right:300px;"></textarea>
+
+                    <input type="submit" value="Submit" style="margin-right:308px;">
+
+                </form>
+            </div>
         </section>
         
 <!------------------------Footer-------------------->
 <footer>
-      <div class="container">
+      <div class="container-fluid">
         <div id="copyright">
             <span id="copyright-text">Copyright &copy; USC SCTNA 2018</span>
         </div>
