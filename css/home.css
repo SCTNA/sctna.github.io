@@ -81,7 +81,10 @@ p{
     margin-left: -8px;
     margin-right: -8px;
     height: 574.5px;
-    background-image: url("../img/bg_main.jpg");
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ), url("../img/bg_main.jpg");
     /* bottom, image */
     background-attachment: fixed;
     background-position: center;
