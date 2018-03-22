@@ -167,6 +167,7 @@ p{
 
 .event-date{
     margin-top: 20px;
+    margin-bottom: -20px;
     font-style: italic;
     color: #990000;
     font-weight: bold;
