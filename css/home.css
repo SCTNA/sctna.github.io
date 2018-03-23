@@ -288,7 +288,7 @@ p{
     }
 
     #updates-events{
-        margin-top: 0px;
+        margin-top: 10px;
     }
     .event-img{
         margin-top: 20px;
@@ -322,7 +322,6 @@ p{
         font-size: 15px;
         width: 100%;
     }
-
 }
 
 /********************Resources*********************/
@@ -365,6 +364,50 @@ p{
     font-size: 18px;
     color: #5b514a;
 }
+.rsrc-list{
+    font-size:18px;
+    line-height:1.7;
+    margin-top:-4px;
+}
+
+@media only screen and (max-width: 768px){
+    #resources{
+        margin-top: 560px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    #rsrc-lists{
+        margin-top: 50px;
+    }
+
+    .item-img{
+        height:150px;
+        width:240px;
+    }
+
+    .rsrc-text{
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .rsrc-heading{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .rsrc-content{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    .rsrc-list{
+        font-size: 15px;
+        line-height:1.2;
+    }
+
+}
 
 /*********************Contact*************************/
 #contact{
@@ -373,7 +416,6 @@ p{
 }
 #contact-heading {
     text-align: left;
-    height:
 }
 
 #contact-form {
@@ -397,6 +439,10 @@ input[type=text], input[type=email], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
     float:left;
 }
+
+.info-input{
+    width: 450px;
+}
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: #990000;
@@ -412,6 +458,41 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     background-color: #FFCC00;
+}
+
+@media only screen and (max-width: 768px){
+    #contact{
+        margin-top: 2090px;
+        margin-left: 0px;
+    }
+    #contact-form {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .label{
+        font-size: 15px;
+    }
+    input[type=text], input[type=email], select, textarea { 
+        padding: 8px; /* Some padding */  
+        margin-top: 4px; /* Add a top margin */
+        margin-bottom: 14px; /* Bottom margin */
+    }
+    
+    .info-input{
+       width: 300px; 
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        padding: 10px 18px;
+        float: right;
+    }
+    
+    #message-area{
+        max-width: 100%;
+    }
+
 }
 
 /*************************Footer*******************************/
