@@ -35,7 +35,7 @@
                     <h1><span id = "title">SC Trojans Neighborhood Association</span></h1>
                     </div>
                     <div class="col-lg-4 col-xs-12">
-                    <img id = "logo" class="img-responsive" src="img/usc-shield-name-black.png">
+                    <img id = "logo" class="img-responsive" src="img/PrimShield-Word_RegShieldRGB_CardOnWhite.jpg">
                     </div>
                 </div>
             </div>
@@ -66,11 +66,11 @@
         <div id="navbar" >
             <div class="container-fluid">
                 <div id="navbar-items">
-                    <a class="nav-link" href="#services" onmousemove="overTab(this)" onmouseout="outTab(this)">Home</a>
-                    <a class="nav-link " href="#portfolio" onmousemove="overTab(this)" onmouseout="outTab(this)">About Us</a>
-                    <a class="nav-link " href="#about" onmousemove="overTab(this)" onmouseout="outTab(this)">Donate</a>
-                    <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Impact Area</a>
-                    <a class="nav-link" href="#contact" onmousemove="overTab(this)" onmouseout="outTab(this)">Town Hall</a>
+                    <a class="nav-link" herf=".HomePage" onmousemove="overTab(this)" onmouseout="outTab(this)">Home</a>
+                    <a class="nav-link " onmousemove="overTab(this)" onmouseout="outTab(this)">About Us</a>
+                    <a class="nav-link " onmousemove="overTab(this)" onmouseout="outTab(this)">Donate</a>
+                    <a class="nav-link" onmousemove="overTab(this)" onmouseout="outTab(this)">Impact Area</a>
+                    <a class="nav-link" onmousemove="overTab(this)" onmouseout="outTab(this)">Town Hall</a>
                 </div>
             </div>
         </div>
@@ -103,10 +103,18 @@
                     <div id="intro-heading"><h1><span>WELCOME TO OUR NEIGHBORHOOD</span></h1></div>
                     <div id="intro-mission-heading"><h3><span>Our mission</span></h3></div>
                     <div id="intro-mission-content"><p>The SC Trojans Neighborhood Association aims to protect and assist renters within the USC DPS area who have had their rights violated by landlords or property management companies.</p></div>
-                    <button class="btn" id = "learnmore-btn" href="#services">Learn More</button>
+                    <button class="btn" id = "learnmore-btn" action="#updates">Learn More</button>
                 </div>
             </div>
         </section>
+        
+        <script>
+            $("learnmore-btn").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#updates").offset().top},
+                    'slow');
+            });
+        </script>
 
 <!-----------------------Updates--------------------------->
         <section id="updates">
@@ -117,16 +125,16 @@
                         <div class="event-img"><img class="content-img" src="img/event-3.24.jpg" style="float:left"></div>
                         <section class="event-text">
                             <div class="event-heading"><h6>TNA Day of Canvassing 2.0</h6></div>
-                                <div class="event-date" style="font-size:18px">
-                                    <h7>Date: 3.24.2018</h7>
-                               </div>
-                                <div class="event-date" style="font-size:18px">
-                                    <h7>Location: USC Village, 3301 S. Hoover Street, Los Angeles, CA, 90007</h7>
-                                </div>
-                                <div class="event-content">
-                                    <p > Since its inception in 2016, the USC Housing Law Clinic has provided free referrals, translation services, legal representation, and other renter resources for local residents. Many have faced discrimination, eviction, and landlord disputes, among a host of other housing issues.</p> 
-                                    <p>In partnership with the Housing Law Clinic, the Trojan Neighborhood Association will be reaching out to tenants around USC campus (within the DPS Response Zone) to provide essential renter resources. Volunteers will be knocking on doors and introducing to tenants some of the basic services that the Clinic offers, as well as handing out brochures about tenant rights.</p>
-                                </div>
+                            <div class="event-date" style="font-size:18px">
+                                <h7>Date: 3.24.2018</h7>
+                            </div>
+                            <div class="event-date" style="font-size:18px">
+                                <h7>Location: USC Village, 3301 S. Hoover Street, Los Angeles, CA, 90007</h7>
+                            </div>
+                            <div class="event-content">
+                                <p > Since its inception in 2016, the USC Housing Law Clinic has provided free referrals, translation services, legal representation, and other renter resources for local residents. Many have faced discrimination, eviction, and landlord disputes, among a host of other housing issues.</p> 
+                                <p>In partnership with the Housing Law Clinic, the Trojan Neighborhood Association will be reaching out to tenants around USC campus (within the DPS Response Zone) to provide essential renter resources. Volunteers will be knocking on doors and introducing to tenants some of the basic services that the Clinic offers, as well as handing out brochures about tenant rights.</p>
+                            </div>
                         </section>
                     </section>
                 </section>
