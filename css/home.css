@@ -15,6 +15,10 @@ h6{
     color: #990000;
 }
 
+h7{
+    font-size: 18px;
+}
+
 p{
      line-height: 1.5;
      margin-top: 0em;
@@ -31,7 +35,7 @@ p{
         font-size: 30px;
     }
     h6{
-     font-size: 20px;
+        font-size: 20px;
     }
     h3{
         font-size: 25px;
@@ -40,9 +44,7 @@ p{
         font-size: 15px;
     }
     p{
-    line-height: 1.0;
-     margin-top: 0em;
-     margin-bottom: 0.4em;
+        line-height: 1.2;
     }
 }
 /******************Header******************/
@@ -209,28 +211,24 @@ p{
     height: 271px;
     }
     #intro-heading{
-        padding-top: 30px; 
+        padding-top: 55px; 
     }
 
     #intro-mission-heading{
-        padding-top: 15px;
-        height: 15px;
-        width:100%;
+        display: none;
     }
 
     #intro-mission-content{
-        font-size: 15px;
-        width:100%;
-        height: 40px;
+        display: none;
     }
 
     #learnmore-btn{
-        margin-top: 30px;
-        font-size: 13px;
+        margin-top: 55px;
+        font-size: 15px;
         text-align: center;
         background-color: transparent;;
         color: white;
-        height: 30px;
+        height: 35px;
         width: 90px;
     }
 }
@@ -282,13 +280,13 @@ p{
 
 @media only screen and (max-width: 768px){
     #updates{
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 0px;
     margin-right: 0px;
     }
 
     #updates-events{
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .event-img{
         margin-top: 20px;
@@ -312,8 +310,7 @@ p{
     }
 
     .event-date{
-        margin-top: 10px;
-        margin-bottom: -20px;
+        line-height: 1.2;
         width: 100%;
     }
 
@@ -354,6 +351,14 @@ p{
     width: 860px;
 }
 
+ #LADBS{
+        margin-top: 65px;
+ }
+
+ #USCHLC{
+      margin-top:62px;  
+ }
+
 .rsrc-heading{
     margin-top: -8px;
     font-size: 30px;
@@ -372,29 +377,43 @@ p{
 
 @media only screen and (max-width: 768px){
     #resources{
-        margin-top: 560px;
+        margin-top: 615px;
         margin-left: 0px;
         margin-right: 0px;
     }
 
 
     #rsrc-lists{
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     .item-img{
-        height:150px;
-        width:240px;
+        height:115px;
+        width:200px;
+        margin-bottom: -15px;
     }
 
     .rsrc-text{
         padding-left: 0px;
         width: 100%;
     }
+    
+    #HCIDLA{
+        margin-top: 40px;
+    }
+    
+    #LADBS{
+        margin-top: 40px;
+    }
+    
+    #USCHLC{
+        margin-top:45px;
+    }
 
     .rsrc-heading{
-        margin-top: 10px;
+        margin-top: -15px;
         font-size: 20px;
+        line-height: 1.2;
     }
 
     .rsrc-content{
@@ -411,7 +430,7 @@ p{
 
 /*********************Contact*************************/
 #contact{
-    margin-top: 1550px;
+    margin-top: 1250px;
     margin-left: 54.5px;
 }
 #contact-heading {
@@ -462,7 +481,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 768px){
     #contact{
-        margin-top: 2090px;
+        margin-top: 1930px;
         margin-left: 0px;
     }
     #contact-form {
@@ -486,7 +505,7 @@ input[type=submit]:hover {
     /* Style the submit button with a specific background color etc */
     input[type=submit] {
         padding: 10px 18px;
-        float: right;
+        float:none;
     }
     
     #message-area{
