@@ -97,7 +97,7 @@ p{
         margin-top: 10px;
         display: block;
         float: right;
-        width: 45%;
+        width: 48%;
         margin-right: -20px;
     }
 }
@@ -131,9 +131,6 @@ p{
 }
 
 @media only screen and (max-width: 768px){
-   #navbar {
-    width: 100%;
-    }
 
     #navbar-items{
         margin-left: 10px;
@@ -172,7 +169,7 @@ p{
     padding-top: 70px;
     padding-bottom: -20px;
     height: 40px;
-    width:100%px;
+    width:100%;
 }
 
 #intro-mission-content{
@@ -206,9 +203,10 @@ p{
 
 @media only screen and (max-width: 768px){
     #welcomContainer{
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 271px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 271px;
+        background-size: auto 794px;
     }
     #intro-heading{
         padding-top: 55px; 
@@ -377,9 +375,10 @@ p{
 
 @media only screen and (max-width: 768px){
     #resources{
-        margin-top: 615px;
+        margin-top: 645px;
         margin-left: 0px;
         margin-right: 0px;
+        margin-bottom: 30px;
     }
 
 
@@ -481,12 +480,12 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 768px){
     #contact{
-        margin-top: 2150px;
+        margin-top: 2140px;
         margin-left: 0px;
     }
     #contact-form {
         margin-left: 0px;
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
     .label{
