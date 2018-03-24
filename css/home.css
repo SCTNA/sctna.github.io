@@ -430,7 +430,7 @@ p{
 
 /*********************Contact*************************/
 #contact{
-    margin-top: 1600px;
+    margin-top: 1550px;
     margin-left: 54.5px;
 }
 #contact-heading {
@@ -481,12 +481,12 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 768px){
     #contact{
-        margin-top: 1930px;
+        margin-top: 2100px;
         margin-left: 0px;
     }
     #contact-form {
         margin-left: 0px;
-        margin-top: 30px;
+        margin-top: 100px;
     }
 
     .label{
