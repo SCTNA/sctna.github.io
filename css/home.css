@@ -375,7 +375,7 @@ p{
 
 @media only screen and (max-width: 768px){
     #resources{
-        margin-top: 645px;
+        margin-top: 685px;
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 30px;
@@ -498,7 +498,7 @@ input[type=submit]:hover {
     }
     
     .info-input{
-       width: 300px; 
+       max-width: 100%;
     }
 
     /* Style the submit button with a specific background color etc */
