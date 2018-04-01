@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Donate</title>
+    
+    <!-- js libs -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this page -->
+    <link href="css/donate.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-------------------------Header------------------------------>
+    <header class="masthead">
+        <div class="container-fluid">
+            <h1><span id="title">SC Trojans Neighborhood Association</span></h1>
+            <img id="logo" src="img/PrimShield-Word_RegShieldRGB_CardOnWhite.jpg">
+            <img id="mobile-logo" src="img/PrimShield-Mono_RegUseShield_CardOnWhite.jpg">
+        </div>
+    </header>
+
+    <!------------------------Navigation Bar----------------------->
+    <div id="navbar">
+        <div class="container-fluid">
+            <div id="navbar-items">
+                <a class="nav-link" herf=".HomePage" onmousemove="overTab(this)" onmouseout="outTab(this)">Home</a>
+                <a class="nav-link " onmousemove="overTab(this)" onmouseout="outTab(this)">About Us</a>
+                <a class="nav-link " onmousemove="overTab(this)" onmouseout="outTab(this)">Donate</a>
+                <a class="nav-link" onmousemove="overTab(this)" onmouseout="outTab(this)">Impact Area</a>
+                <a class="nav-link" onmousemove="overTab(this)" onmouseout="outTab(this)">Town Hall</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function overTab(x) {
+            x.style.color = "#FFCC00";
+        }
+
+        function outTab(x) {
+            x.style.color = "white";
+        }
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <!----------------------Content---------------------->
+    <section class="container-fluid" id="main-content">
+        <div class="row py-4">
+            <div class="col-xs-1 col-sm-1"></div>
+            <div class="col">
+                <div class="text-center" id="heading">
+                    <h2>Donate</h2>
+                </div>
+                
+                <section class="row content-row" id="intro">
+                    <div class="col">
+                        <div class="donate-subheading">Make a donation to TNA</div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores tempora commodi modi amet ullam accusamus ducimus debitis consectetur. Doloremque perspiciatis, explicabo ad maiores optio, id quod, quas cupiditate soluta alias eligendi facere laboriosam maxime sint adipisci vel? Amet fugit quam quod ea quidem eveniet, perspiciatis dolorum aperiam modi optio.
+                        <br>
+                        <br> If you would prefer to <a data-toggle="collapse" href="#donate-mail-info" role="button">Donate by Mail</a> :
+                        <div class="collapse" id="donate-mail-info">
+                            <div class="card card-body">
+                                Address Details
+                            </div>
+                        </div>
+                        <br>
+                        <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, laborum.
+                    </div>
+                </section>
+
+                <section class="row content-row" id="donate-amount-sec">
+                    <div class="col-12 donate-subheading">Donation amount</div>
+                    <div class="col">
+                        <!--<div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                        <div class="btn-group-toggle" data-toggle="buttons" id="amount-buttons">
+                            <label class="btn btn-donate-primary active">
+    <input type="radio" id="amount-option1" autocomplete="off" checked> $5
+  </label>
+                            <label class="btn btn-donate-primary">
+    <input type="radio" id="amount-option2" autocomplete="off"> $10
+  </label>
+                            <label class="btn btn-donate-primary">
+    <input type="radio" id="amount-option3" autocomplete="off"> $50
+  </label>
+                            <label class="btn btn-donate-primary">
+    <input type="radio" id="amount-option4" autocomplete="off"> $100
+  </label>
+                            <div class="input-group" id="donate-amount-input">
+                                <div class="input-group-prepend btn-group-toggle">
+                                    <label class="btn btn-donate-primary mr-0" id="amount-other">
+    <input type="radio" id="amount-option5" autocomplete="off"> Other
+  </label>
+                                </div>
+                                <input type="text" class="form-control" id="donate-amount" placeholder="Your Amount">
+                            </div>
+                        </div>
+                        <script>
+                            $("#amount-buttons>.btn").click(function() {
+                                $("#donate-amount").removeClass("active");
+                            });
+                            $("#amount-other").focusin(function() {
+                                $("#donate-amount").addClass("active");
+                                setTimeout(function() {
+                                    $("#donate-amount").focus();
+                                }, 0);
+                            });
+                            $("#donate-amount").focusin(function() {
+                                if (!$("#amount-other").hasClass("active")) {
+                                    $("#amount-other").button('toggle');
+                                }
+                            });
+                        </script>
+                        <!--<div class="input-group" id="donate-amount-input">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-donate-primary mr-0" data-toggle="button" type="button">Other</button>
+                            </div>
+                            <input type="text" class="form-control" id="donate-amount" placeholder="Your Amount">
+                        </div>-->
+                    </div>
+                </section>
+
+                <section class="row content-row" id="donate-frequency">
+                    <div class="col-12 donate-subheading">Donation frequency</div>
+                    <div class="col">
+                        <div class="btn-toolbar" role="toolbar">
+                            <!--<div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-donate-primary active">
+    <input type="radio" id="donate-onetime" autocomplete="off" checked> One Time
+  </label>
+                                <label class="btn btn-donate-primary">
+    <input type="radio" id="donate-monthly" autocomplete="off"> Monthly
+  </label>
+                                <label class="btn btn-donate-primary">
+    <input type="radio" id="donate-quarterly" autocomplete="off"> Quarterly
+  </label>
+                                <label class="btn btn-donate-primary">
+    <input type="radio" id="donate-annual" autocomplete="off"> Annual
+  </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row content-row" id="donate-methods">
+                    <div class="col-12 donate-subheading">Payment Information</div>
+                    <div class="col-12 pb-1">
+                        <small>Please click below to choose your payment method.</small>
+                    </div>
+                    <div class="col">
+                        <div class="btn-toolbar" role="toolbar">
+                            <!--<div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-donate-primary">
+    <input type="radio" id="donate-cards" autocomplete="off"> Credit/Debit
+  </label>
+                                <label class="btn btn-donate-primary">
+    <input type="radio" id="donate-paypal" autocomplete="off"> Paypal
+  </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row content-row" id="donate-options">
+                    <div class="col-12 donate-subheading">If you have a special purpose for your donation, please let us know.</div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="donor-designation">I want my donation to be designated toward:</label>
+                            <select class="form-control" id="donor-designation">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option><option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="donor-comment">Leave a message:</label>
+                            <input type="text" class="form-control" id="donor-comment" placeholder="lalala">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row content-row">
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-lg btn-donate-primary">DONATE</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-1 col-sm-1"></div>
+        </div>
+    </section>
+
+
+
+    <!------------------------Footer-------------------->
+    <footer>
+        <div class="container-fluid">
+            <div id="copyright">
+                <span id="copyright-text">Copyright &copy; USC SCTNA 2018</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

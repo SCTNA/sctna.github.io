@@ -1,0 +1,77 @@
+@import "../vendor/bootstrap/scss/functions";
+@import "../vendor/bootstrap/scss/variables";
+@import "../vendor/bootstrap/scss/mixins";
+
+@import "common.scss";
+
+
+$page-name: donate;
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    &:hover {
+        text-decoration: none;
+        color: $secondary-color;
+    }
+}
+
+
+.btn-donate-primary {
+    @include button-variant($primary-color, $primary-color, $secondary-color, $secondary-color, $secondary-color, $secondary-color);
+    
+    &:hover, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active {
+        color: white
+    }
+    margin-right: 1em;
+}
+
+
+.donate-subheading {
+    color: black;
+    font-size: 1.5em;
+    padding-bottom: 0.25em;
+}
+
+.content-row {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#donate-amount-sec {
+    .btn {
+        width: 4.5em;
+    }
+}
+
+#donate-frequency {
+    .btn {
+        width: 7em;
+    }
+}
+
+#donate-methods {
+    .btn {
+        width: 9em;
+    }
+}
+
+#main-content {
+    max-width: 1100px;
+}
+
+#donate-amount-input {
+    max-width: 300px;
+    .form-control {
+        border-color: $primary-color;
+    }
+    .active {
+        border-color: $secondary-color;
+    }
+}
+
+#amount-buttons {
+    >.btn {
+        margin-bottom: 1em;
+    }
+}
