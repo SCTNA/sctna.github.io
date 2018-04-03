@@ -227,7 +227,7 @@
         <section id="contact">
             <div class="container-fluid">
                 <div id="contact-heading"><h5>CONTACT US</h5></div>
-                <form id="contact-form"  action="https://docs.google.com/forms/d/e/1FAIpQLSdnpYs5dWQqn1nzDz7k1p3lDSLZ3fI3TftBFJebjrFVPALIoQ/formResponse?usp=pp_url&entry.1150118280=jfnjkvfn&entry.878884882=kjndc&entry.1508253180=kjncdkjnc&entry.319544452=kjdnkjnc">
+                <form id="contact-form"  action="https://docs.google.com/forms/d/e/1FAIpQLSdnpYs5dWQqn1nzDz7k1p3lDSLZ3fI3TftBFJebjrFVPALIoQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 
                     <label class="label" for="entry.1150118280">Name</label>
                     <input class="info-input" type="text" id="entry.1150118280" name="entry.1150118280" style="margin-right:300px;">
@@ -244,9 +244,18 @@
                     <input type="submit" value="Submit" style="margin-right:308px;">
 
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 <!--<h6 id="contact-details" style="color: #5b514a">If you need any help, please email to tna@usc.edu. </h6>-->
             </div>
         </section>
+        <script src="js/jqBootstrapValidation.min.js"></script>
+        <script type="text/javascript">var submitted=false;</script>
+        <script type="text/javascript">
+            $('#contact-form').on('submit', function(e) {
+            $('#contact-form *').fadeOut(2000);
+            $('#contact-form').prepend('Your submission has been processed...');
+            });
+        </script>
         
 <!------------------------Footer-------------------->
 <footer>
