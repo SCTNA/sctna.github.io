@@ -63,7 +63,7 @@ p{
     color:#5b514a; 
     float: left;
     font-style: normal;
-    margin-top: 8px;
+    margin-top: -8px;
 }
 
 #logo{
@@ -73,7 +73,10 @@ p{
     padding-right: 10px;
     margin-top: -20px;
 }
-
+#sclogo{
+    height: 90px;
+    width: 80px;
+}
 #mobile-logo{
     display: none;
 }
@@ -94,11 +97,15 @@ p{
     }
 
     #mobile-logo{
-        margin-top: 10px;
+        margin-top: 20px;
         display: block;
         float: right;
         width: 48%;
         margin-right: -20px;
+    }
+    #sclogo{
+        height: 60px;
+        width: 50px;
     }
 }
 
